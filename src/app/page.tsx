@@ -1,24 +1,27 @@
 "use client";
+
 import Image from "next/image";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className="min-h-screen relative flex flex-col items-center justify-center text-white">
+    <div className="relative min-h-screen flex flex-col items-center justify-center text-white overflow-hidden">
 
-      {/* Background Image */}
+      {/* Background */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/black-friday-sales-sign-neon-light.jpg"   // 👈 apni background image public/bg.jpg me rakho
+          src="/black-friday-sales-sign-neon-light.jpg"
           alt="Background"
           fill
+          sizes="100vw"
+          priority
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       {/* Content */}
-      <h1 className="text-5xl md:text-7xl font-extrabold mb-4 rgb-text">
-        Awais Electronic  Store
+      <h1 className="text-5xl md:text-7xl font-extrabold mb-4 rgb-text text-center">
+        Awais Electronic Store
       </h1>
 
       <p className="text-lg text-gray-300 mb-10">
@@ -29,12 +32,12 @@ export default function HomePage() {
         <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl text-lg font-semibold">
           Shop Now
         </button>
+
         <button className="px-8 py-3 border border-blue-500 hover:bg-blue-500/20 rounded-xl text-lg">
           Learn More
         </button>
       </div>
 
-      {/* RGB Blue Animation */}
       <style jsx>{`
         .rgb-text {
           background: linear-gradient(
