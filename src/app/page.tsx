@@ -18,7 +18,7 @@ export default function HomePage() {
 
       {/* Content */}
       <h1 className="text-5xl md:text-7xl font-extrabold mb-4 rgb-text">
-        Awais Electron Store
+        Awais Electronic  Store
       </h1>
 
       <p className="text-lg text-gray-300 mb-10">
