@@ -8,7 +8,7 @@ export default function Navbar() {
 
       {/* Logo */}
       <h1 className="text-2xl font-bold text-blue-500">
-        Owais Store
+        
       </h1>
 
       {/* Menu */}
